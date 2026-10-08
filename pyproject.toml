@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "breast-mri-vla-jepa"
+version = "1.0.1"
+description = "Standalone longitudinal MRI JEPA world model with landmark pCR prediction"
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+dependencies = ["torch>=2.5", "numpy>=1.24", "PyYAML>=6", "scikit-learn>=1.1"]
+
+[project.optional-dependencies]
+raw = ["nibabel>=5.2", "scipy>=1.10", "pandas>=2.0", "openpyxl>=3.1"]
+analysis = ["matplotlib>=3.7"]
+test = ["pytest>=8"]
+
+[project.scripts]
+mri-vla-jepa = "mri_vla_jepa.cli:entrypoint"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+mri_vla_jepa = ["resources/configs/*.yaml"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

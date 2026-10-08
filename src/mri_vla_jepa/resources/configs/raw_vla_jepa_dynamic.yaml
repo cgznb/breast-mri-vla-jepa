@@ -1,0 +1,42 @@
+schema: responsewm_raw_vla_jepa_train_v1
+model:
+  clinical_dim: 4
+  dim: 128
+  token_grid:
+  - 2
+  - 4
+  - 4
+  encoder_depth: 2
+  fusion_depth: 2
+  predictor_depth: 2
+  heads: 4
+  state_queries: 8
+  pcr_queries: 4
+  fm_channels: 24
+  ema_decay: 0.995
+  dropout: 0.1
+  enable_flow: false
+image_shape:
+- 32
+- 128
+- 128
+schedule: one_stage
+representation_steps: 0
+joint_steps: 6000
+landmarks: all_observed
+task_weight: 1.0
+jepa_weight: 0.5
+flow_weight: 0.0
+reconstruction_weight: 0.1
+variance_weight: 0.01
+batch_size: 1
+accumulation: 4
+lr: 0.0001
+validation_every: 100
+checkpoint_every: 100
+validation_batch_size: 1
+device: cuda
+precision: bf16
+seed: 20261003
+threads: 4
+allow_synthetic: false

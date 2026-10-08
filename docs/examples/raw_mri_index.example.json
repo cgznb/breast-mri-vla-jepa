@@ -1,0 +1,138 @@
+{
+  "schema": "responsewm_raw_mri_index_v1",
+  "synthetic": false,
+  "patients": [
+    {
+      "patient_key": "EXAMPLE-001",
+      "geometry": {
+        "source_stage": 0,
+        "source_only": true,
+        "grid_id": "EXAMPLE-001_T0_RAS",
+        "orientation": "RAS",
+        "roi_source": "T0",
+        "resampling": "source_grid"
+      },
+      "visits": [
+        {
+          "stage": 0,
+          "available_at": 0,
+          "grid_id": "EXAMPLE-001_T0_RAS",
+          "phases": [
+            "MRI/EXAMPLE-001/T0_pre.nii.gz",
+            "MRI/EXAMPLE-001/T0_first_post.nii.gz",
+            "MRI/EXAMPLE-001/T0_metadata_late.nii.gz"
+          ]
+        },
+        {
+          "stage": 1,
+          "available_at": 1,
+          "grid_id": "EXAMPLE-001_T0_RAS",
+          "phases": [
+            "MRI/EXAMPLE-001/T1_pre.nii.gz",
+            "MRI/EXAMPLE-001/T1_first_post.nii.gz",
+            "MRI/EXAMPLE-001/T1_metadata_late.nii.gz"
+          ]
+        },
+        null,
+        {
+          "stage": 3,
+          "available_at": 3,
+          "grid_id": "EXAMPLE-001_T0_RAS",
+          "phases": [
+            "MRI/EXAMPLE-001/T3_pre.nii.gz",
+            "MRI/EXAMPLE-001/T3_first_post.nii.gz",
+            "MRI/EXAMPLE-001/T3_metadata_late.nii.gz"
+          ]
+        }
+      ]
+    },
+    {
+      "patient_key": "EXAMPLE-002",
+      "geometry": {
+        "source_stage": 0,
+        "source_only": true,
+        "grid_id": "EXAMPLE-002_T0_RAS",
+        "orientation": "RAS",
+        "roi_source": "T0",
+        "resampling": "source_grid"
+      },
+      "visits": [
+        {
+          "stage": 0,
+          "available_at": 0,
+          "grid_id": "EXAMPLE-002_T0_RAS",
+          "phases": [
+            "MRI/EXAMPLE-002/T0_pre.nii.gz",
+            "MRI/EXAMPLE-002/T0_first_post.nii.gz",
+            "MRI/EXAMPLE-002/T0_metadata_late.nii.gz"
+          ]
+        },
+        {
+          "stage": 1,
+          "available_at": 1,
+          "grid_id": "EXAMPLE-002_T0_RAS",
+          "phases": [
+            "MRI/EXAMPLE-002/T1_pre.nii.gz",
+            "MRI/EXAMPLE-002/T1_first_post.nii.gz",
+            "MRI/EXAMPLE-002/T1_metadata_late.nii.gz"
+          ]
+        },
+        null,
+        {
+          "stage": 3,
+          "available_at": 3,
+          "grid_id": "EXAMPLE-002_T0_RAS",
+          "phases": [
+            "MRI/EXAMPLE-002/T3_pre.nii.gz",
+            "MRI/EXAMPLE-002/T3_first_post.nii.gz",
+            "MRI/EXAMPLE-002/T3_metadata_late.nii.gz"
+          ]
+        }
+      ]
+    },
+    {
+      "patient_key": "EXAMPLE-003",
+      "geometry": {
+        "source_stage": 0,
+        "source_only": true,
+        "grid_id": "EXAMPLE-003_T0_RAS",
+        "orientation": "RAS",
+        "roi_source": "T0",
+        "resampling": "source_grid"
+      },
+      "visits": [
+        {
+          "stage": 0,
+          "available_at": 0,
+          "grid_id": "EXAMPLE-003_T0_RAS",
+          "phases": [
+            "MRI/EXAMPLE-003/T0_pre.nii.gz",
+            "MRI/EXAMPLE-003/T0_first_post.nii.gz",
+            "MRI/EXAMPLE-003/T0_metadata_late.nii.gz"
+          ]
+        },
+        {
+          "stage": 1,
+          "available_at": 1,
+          "grid_id": "EXAMPLE-003_T0_RAS",
+          "phases": [
+            "MRI/EXAMPLE-003/T1_pre.nii.gz",
+            "MRI/EXAMPLE-003/T1_first_post.nii.gz",
+            "MRI/EXAMPLE-003/T1_metadata_late.nii.gz"
+          ]
+        },
+        null,
+        {
+          "stage": 3,
+          "available_at": 3,
+          "grid_id": "EXAMPLE-003_T0_RAS",
+          "phases": [
+            "MRI/EXAMPLE-003/T3_pre.nii.gz",
+            "MRI/EXAMPLE-003/T3_first_post.nii.gz",
+            "MRI/EXAMPLE-003/T3_metadata_late.nii.gz"
+          ]
+        }
+      ]
+    }
+  ]
+}

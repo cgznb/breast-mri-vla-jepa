@@ -1,0 +1,54 @@
+schema: responsewm_raw_vla_jepa_train_v1
+model:
+  clinical_dim: 4
+  dim: 128
+  token_grid: [2, 4, 4]
+  encoder_depth: 2
+  fusion_depth: 2
+  predictor_depth: 2
+  heads: 4
+  state_queries: 8
+  pcr_queries: 4
+  fm_channels: 24
+  ema_decay: 0.995
+  dropout: 0.1
+  enable_flow: false
+image_shape: [32, 128, 128]
+schedule: one_stage
+representation_steps: 0
+training_unit: epochs
+max_epochs: 200
+early_stopping_patience: 50
+early_stopping_min_delta: 0.0
+landmarks: t0
+task_weight: 1.0
+jepa_weight: 0.0
+flow_weight: 0.0
+reconstruction_weight: 0.0
+variance_weight: 0.0
+variance_definition: 'off'
+batch_size: 16
+accumulation: 1
+lr: 0.0001
+lr_scheduler: plateau
+plateau_factor: 0.5
+plateau_patience: 5
+plateau_min_lr: 0.000001
+plateau_threshold: 0.0
+image_cache: image_cache_20261004
+prefetch_batches: 2
+loader_workers: 2
+pin_memory: true
+non_blocking_transfer: true
+validation_every: 1
+checkpoint_every: 48
+validation_batch_size: 16
+device: cuda
+precision: bf16
+seed: 17
+threads: 4
+allow_synthetic: false
+diagnostics_every_epochs: 5
+diagnostics_patients: 32
+diagnostics_batch_size: 16
+diagnostics_seed: 20261004

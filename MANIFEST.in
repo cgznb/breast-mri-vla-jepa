@@ -1,0 +1,9 @@
+include README.md LICENSE pyproject.toml requirements.txt train.py
+recursive-include configs *.yaml
+recursive-include src *.py *.yaml
+recursive-include scripts *.py
+recursive-include tests *.py
+recursive-include docs *.md *.json
+recursive-include tools *.py
+recursive-include results_summary *.md *.csv
+global-exclude __pycache__ *.py[cod]
